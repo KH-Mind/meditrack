@@ -1,0 +1,341 @@
+/* ========================================
+   MediTrack 基本スタイルシート
+   ======================================== */
+
+/* リセット */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #f5f6fa;
+	color: #2c3e50;
+	line-height: 1.6;
+}
+
+/* ========================================
+   ヘッダー
+   ======================================== */
+.header {
+	background-color: #3498db;
+	color: white;
+	padding: 15px 30px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header h1 {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.header-nav {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+
+.header-nav a {
+	color: white;
+	text-decoration: none;
+	padding: 8px 16px;
+	border-radius: 4px;
+	transition: background-color 0.3s;
+}
+
+.header-nav a:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.user-info {
+	color: white;
+	font-size: 14px;
+}
+
+/* ========================================
+   コンテナ
+   ======================================== */
+.container {
+	max-width: 1200px;
+	margin: 30px auto;
+	padding: 0 20px;
+}
+
+.content-box {
+	background-color: white;
+	padding: 30px;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================================
+   ページタイトル
+   ======================================== */
+.page-title {
+	font-size: 28px;
+	color: #2c3e50;
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+	border-bottom: 2px solid #3498db;
+}
+
+/* ========================================
+   ボタン
+   ======================================== */
+.btn {
+	display: inline-block;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	font-size: 14px;
+	cursor: pointer;
+	text-decoration: none;
+	transition: all 0.3s;
+}
+
+.btn-primary {
+	background-color: #3498db;
+	color: white !important;
+}
+
+.btn-primary:hover {
+	background-color: #2980b9;
+}
+
+.btn-secondary {
+	background-color: #95a5a6;
+	color: white;
+}
+
+.btn-secondary:hover {
+	background-color: #7f8c8d;
+}
+
+.btn-small {
+	padding: 6px 12px;
+	font-size: 12px;
+}
+
+/* ========================================
+   テーブル
+   ======================================== */
+.table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+.table th,
+.table td {
+	padding: 12px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+.table th {
+	background-color: #ecf0f1;
+	color: #2c3e50;
+	font-weight: 600;
+}
+
+.table tr:hover {
+	background-color: #f8f9fa;
+}
+
+.table td a {
+	color: #3498db;
+	text-decoration: none;
+}
+
+.table td a:hover {
+	text-decoration: underline;
+}
+
+/* ========================================
+   検索ボックス
+   ======================================== */
+.search-box {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 20px;
+}
+
+.search-box input {
+	flex: 1;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+/* ========================================
+   空状態
+   ======================================== */
+.empty-state {
+	text-align: center;
+	padding: 60px 20px;
+	color: #95a5a6;
+}
+
+.empty-state-icon {
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+
+.empty-state-text {
+	font-size: 18px;
+}
+
+/* ========================================
+   ユーティリティ
+   ======================================== */
+.flex-between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.mb-20 {
+	margin-bottom: 20px;
+}
+
+/* ========================================
+   レスポンシブ
+   ======================================== */
+@media (max-width: 768px) {
+	.container {
+		padding: 0 10px;
+	}
+
+	.header-content {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.search-box {
+		flex-direction: column;
+	}
+
+	.table {
+		font-size: 12px;
+	}
+
+	.table th,
+	.table td {
+		padding: 8px;
+	}
+}
+
+/* ========================================
+   編集ボタンのスタイル
+   ======================================== */
+.btn-secondary {
+	background-color: #3498db !important;
+	color: #ffffff !important;
+	border: none;
+}
+
+.btn-secondary:hover {
+	background-color: #2980b9 !important;
+}
+
+
+/* ========================================
+   看護メモ用スタイル
+   ======================================== */
+.priority-high {
+	color: #e74c3c;
+	font-weight: bold;
+}
+
+.priority-medium {
+	color: #f39c12;
+	font-weight: 600;
+}
+
+.priority-low {
+	color: #95a5a6;
+}
+
+.form-row {
+	display: flex;
+	gap: 15px;
+	margin-bottom: 15px;
+}
+
+.form-row .form-group {
+	flex: 1;
+}
+
+/* 空の状態表示 */
+.empty-state-icon {
+	font-size: 48px;
+	margin-bottom: 15px;
+}
+
+.empty-state-text {
+	font-size: 14px;
+	line-height: 1.6;
+}
+
+/* ========================================
+   看護メモ用スタイル
+   ======================================== */
+.btn-sm.btn-danger {
+	background-color: #c0392b;
+	color: #ffffff;
+	border: none;
+	padding: 6px 12px;
+	font-size: 13px;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.btn-sm.btn-danger:hover {
+	background-color: #a93226;
+}
+
+/* 看護メモの編集・削除ボタン（サイズ統一） */
+.table .btn-sm {
+    padding: 8px 16px !important;
+    font-size: 14px !important;
+    border-radius: 4px !important;
+    border: none !important;
+    cursor: pointer;
+    transition: all 0.3s;
+    min-width: 60px;
+    text-align: center;
+    display: inline-block;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+/* 編集ボタン */
+.table .btn-sm.btn-secondary {
+    background-color: #3498db !important;
+    color: #ffffff !important;
+}
+
+.table .btn-sm.btn-secondary:hover {
+    background-color: #2980b9 !important;
+}
+
+/* 削除ボタン */
+.table .btn-sm.btn-danger {
+    background-color: #c0392b !important;
+    color: #ffffff !important;
+}
+
+.table .btn-sm.btn-danger:hover {
+    background-color: #a93226 !important;
+}

@@ -1,0 +1,19 @@
+# ========================================
+# MediTrack 設定ファイル
+# ========================================
+# このファイルを config.properties にリネームして使用してください
+# パスワードは各自の環境に合わせて変更してください
+
+# データベース設定
+db.url=jdbc:mysql://localhost:3306/meditrack_db?useSSL=false&serverTimezone=Asia/Tokyo&characterEncoding=UTF-8&allowPublicKeyRetrieval=true
+db.user=root
+db.password=YOUR_PASSWORD_HERE
+
+# アプリケーション設定
+app.name=MediTrack
+app.display.name=MediTrack
+app.version=1.0.0
+
+# 表示設定
+display.items.per.page=20
+display.date.format=yyyy/MM/dd
